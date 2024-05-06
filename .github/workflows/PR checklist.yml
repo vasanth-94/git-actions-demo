@@ -1,0 +1,8 @@
+name : PR Check Workflow
+on:
+  pull_request:
+jobs :
+  Checklist_check :
+    runs-on : ubuntu-latest
+    steps :
+      - run : mvn clean install
