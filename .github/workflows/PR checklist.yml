@@ -2,7 +2,7 @@ name : PR Check Workflow
 on:
   pull_request:
 jobs :
-  Checklist_check :
+  MVN_clean :
     runs-on : ubuntu-latest
     steps :
       - name: Checkout code
@@ -12,5 +12,8 @@ jobs :
            java-version: '17'
            distribution: 'temurin'
       - run : mvn clean install
-      - name: checking spotless:check
+  Spotless_check :
+    runs-on : ubuntu-latest
+    steps :
+      - name : spotless check
       - run : mvn spotless:check
