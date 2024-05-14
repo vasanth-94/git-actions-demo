@@ -1,11 +1,11 @@
-name : Merge Request Workflow
+name : Merge Request Workflow 
 on:
   pull_request:
 jobs :
   MVN_clean :
     runs-on: ubuntu-latest
     steps :
-      - name: Checkout code
+      - name: Checkout code 
         uses: actions/checkout@v2
       - uses: actions/setup-java@v4
         with:
