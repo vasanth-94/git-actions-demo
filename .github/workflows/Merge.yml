@@ -1,4 +1,4 @@
-name : Merge Request Workflow
+name : Merge Request Workflow 
 on:
   pull_request:
 jobs :
