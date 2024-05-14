@@ -1,6 +1,6 @@
 name : Merge Request Workflow
 on:
-  pull_request:
+  pull_request: 
 jobs :
   MVN_clean :
     runs-on: ubuntu-latest
