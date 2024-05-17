@@ -4,7 +4,7 @@ on:
 jobs : 
   MVN_clean :
     runs-on: ubuntu-latest
-    steps :
+    steps : 
       - name: Checkout code 
         uses: actions/checkout@v2
       - uses: actions/setup-java@v4
