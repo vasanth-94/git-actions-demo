@@ -1,14 +1,14 @@
 name : Merge Request Workflow
 on:
-  pull_request:
-jobs :
+  pull_request: 
+jobs : 
   MVN_clean :
     runs-on: ubuntu-latest
-    steps :
-      - name: Checkout code
+    steps : 
+      - name: Checkout code 
         uses: actions/checkout@v2
       - uses: actions/setup-java@v4
-        with:
+        with: 
            java-version: '17'
            distribution: 'temurin'
            cache: 'maven'
